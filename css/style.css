@@ -1,0 +1,317 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+    --HiPerksOranje: #ea764d;
+    --Textcolor: #000000;
+    --blue: #78BDDE;
+    --green: #D1E02B;
+    --bluegreen: #48A89B;
+    --orange: #E9C165;
+    --gray: #E7E7E7;
+    --white: #FFFFFF;
+}
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-28 { font-size: 28px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-66 { font-size: 66px; }
+.material-icons.md-120 { font-size: 200px; color: white; }
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    font-family: 'Poppins', sans-serif;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+    color: var(--white);  
+    z-index:1 
+}
+
+nav > ul > li > a > span {
+    color: var(--lightpurple);
+}
+
+#button-highlight {
+    color: var(--white);
+}
+
+/* Header title */
+h1 {
+    font-weight: 700; 
+    font-size: 32px;
+    color: white;
+}
+
+/* Label title */
+h2 {
+    font-weight: 700; 
+    font-size: 28px;
+    margin-bottom: 0.5vh;
+}
+
+h3{
+    color: #5F3869;
+    font-size: 16px;
+    margin-bottom: 1vh;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.search-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.25vh;
+    margin-bottom: 2.25vh;
+
+    align-items: center;
+
+    height: 5vh;
+    width: 100%;
+    background-color: var(--gray);
+    border-radius: 5vh;
+}
+
+.search-wrapper > .material-icons.md-28 {
+    margin-left: 0.75vh;
+    margin-right: 0.25vh;
+    color: var(--darkpurple);
+}
+
+.search-field {
+    padding-left: 0.75vh;
+    padding-right: 1.8vh;
+    height: 95%;
+    width: 100%;
+    color: var(--darkpurple);
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    border-radius: 0vh 5vh 5vh 0vh;
+    background: none;
+    outline: none;
+}
+
+.filter-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 1.5vh;
+    z-index: 1;
+}
+
+.filter-wrapper > div {
+    width: fit-content;
+
+    padding: 0.5vh 1vh 0.5vh 1vh;
+    border-radius: 0.5vh;
+    background-color: var(--darkpurple);
+}
+
+.filter-wrapper > .filter-2, .filter-3, .filter-4 {
+    margin-left: 1vh;
+}
+
+.label-container {
+    padding-bottom: 10vh;
+    margin-right: 3.5vh;
+    margin-left: 3.5vh;
+    top: 23.4vh;
+    bottom:0;
+    left: 0;
+    right: 0;
+    position:fixed;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    z-index: 0;
+}
+
+.label-containerAFD {
+    padding-bottom: 10vh;
+    margin-right: 3.5vh;
+    top: 23.4vh;
+    left: 1.9vh;
+    bottom:0;
+    position:fixed;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    z-index: 0;
+}
+
+.label, .label2, .label3, .label4 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.1vh;
+    padding: 2vh 2.5vh 2vh 2.5vh;
+
+    background-color: var(--blue);
+    border-radius: 0.8vh;
+}
+
+.label > .label-content > h2, .label > .label-content > p {
+    display: flex;
+    color:var(--darkpurple);
+    width: 75%;
+}
+
+.label-content {
+    width: 100%;
+}
+.label-description3 > span > p > b > a {
+    color: var(--darkpurple);
+}
+
+.label > .material-icons.md-66 {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 2%;
+    margin-left: 1vh;
+    height: 100%;
+    align-items: center;
+
+    color: var(--darkpurple);
+    opacity: 50%;
+}
+
+.label-content, .material-icons.md-66 {
+    position: relative;
+    z-index: 2;
+}
+
+.label:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    right: 10%;
+    bottom: 0%;
+    width: 30%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: right 0% bottom 0%;
+    background-size: contain;
+    z-index: 1;
+}
+
+.label.afdeling:before {
+    background-image: url('/Images/afdelingShapesSmall.png');
+}
+
+.label.functie:before {
+    background-image: url('/Images/functieShapesSmall.png');
+}
+
+.label.opleiding:before {
+    background-image: url('/Images/opleidingShapesSmall.png');
+}
+
+
+.label.afdeling {
+    position: relative;
+    background: linear-gradient(var(--gray), #a5cee1);
+}
+
+.label.functie {
+    position: relative;
+    
+    background: linear-gradient(var(--gray), #e8cf95);
+}
+
+.label.opleiding {
+    position: relative;
+    background: linear-gradient(var(--gray), #d9e274);
+}
+
+.Contactpersoon-img
+{
+    margin-left: 7vh;
+}
+.Contactpersoon-Title
+{
+    margin-left: 2vh;
+    margin-bottom: 1vh;
+}
+.contact{
+    background: linear-gradient(var(--gray), #B08BB9);
+
+}
+
+
+@media screen and (max-height: 760px) {
+    .label-container {
+        top: 24vh;
+        /* background-color: yellow; */
+    }
+}
+
+@media screen and (max-height: 720px) {
+    .label-container {
+        top: 24.5vh;
+        /* background-color: red; */
+    }
+}
+
+@media screen and (max-height: 680px) {
+    .label-container {
+        top: 25.5vh;
+        /* background-color: green; */
+    }
+}
+
+@media screen and (max-height: 620px) {
+    .label-container {
+        top: 27vh;
+        /* background-color: blue; */
+    }
+}

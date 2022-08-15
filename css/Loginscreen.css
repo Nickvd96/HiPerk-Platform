@@ -1,0 +1,214 @@
+body {
+    overflow-x: hidden;
+    height: 100vh;
+    background-color: violet;
+    
+}
+
+.body-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ebebeb;
+    overflow-y: hidden;
+}
+
+.body-container:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: -84%;
+    width: 100%;
+    height: 190%;
+    background-image: url(/Images/background.png);
+    background-repeat: no-repeat;
+    background-position: left 34% bottom 8%;
+    background-size: cover;
+  }
+
+.body-wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 3.5vh;
+    margin-right: 3.5vh;
+}
+
+.logo-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 3.5vh;
+    z-index: 2;
+}
+
+.logo-text-wrapper {
+    margin-top: 55%;
+
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.product-container {
+    display: flex;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    height: 25vh;
+    z-index: 2;
+    align-self: center;
+}
+
+.product-wrapper > h5, p {
+    color: white;
+}
+
+.product-wrapper > h5 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.product-wrapper > p {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3.5px;
+}
+
+.login-container {
+    position: relative;
+    height: 10vh;
+    z-index: 5;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.username-wrapper, .password-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: -1vh;
+    margin-bottom: 2.25vh;
+    align-items: center;
+    height: 6vh;
+    background-color: white;
+    border-radius: 5vh;
+}
+
+.login-wrapper > .password-wrapper > .material-icons.md-28 {
+    margin-left: 0.75vh;
+    margin-right: 0.25vh;
+    color: var(--HiPerksOranje);
+}
+
+.login-wrapper > .username-wrapper > .material-icons.md-28 {
+    margin-left: 0.75vh;
+    margin-right: 0.25vh;
+    color: var(--HiPerksOranje);
+}
+
+#password-visibility {
+    right: 1vh;
+    position: absolute;
+}
+
+.username-field, .password-field {
+    padding-left: 0.75vh;
+    padding-right: 1.8vh;
+    height: 95%;
+    width: 100%;
+    color: var(--Textcolor);
+    font-weight: 600;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    border-radius: 0vh 5vh 5vh 0vh;
+    background: none
+}
+
+span#myPassword {
+    right: 3vh;
+    position: absolute;
+}
+
+.button-member {
+    padding: 1vh 5vh 1vh 5vh;
+    color: white;
+    border-radius: 0.5vh;
+    font-weight: 700;
+    font-size: 19px;
+    border: none;
+    outline: none;
+    background-color: var(--HiPerksOranje);
+    padding-right: 5vh;
+    padding-left: 5vh;
+    width:200%;
+}
+
+#password-visibility {
+    cursor: pointer;
+}
+
+/* BUGFIXES || NEGATING CSS FROM STYLE.CSS */
+.label > .label-content > h2, p {
+    display: block;
+    width: auto;
+}
+
+.label-content {
+    width: auto;
+}
+.ForgotPassword{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5%;
+}
+.ForgotPassword > a{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.button-login{
+    padding: 2vh 5vh 2vh 5vh;
+    color: white;
+    border-radius: 0.5vh;
+    font-weight: 700;
+    font-size: 19px;
+    border: none;
+    outline: none;
+    background-color: var(--HiPerksOranje);
+    padding-right: 15vh;
+    padding-left: 16vh;
+    max-width: 308px;
+    text-align: center;
+}
+.button-register{
+
+    padding: 2vh 5vh 2vh 5vh;
+    color: white;
+    border-radius: 0.5vh;
+    font-weight: 700;
+    font-size: 19px;
+    border: none;
+    outline: none;
+    background-color: var(--HiPerksOranje);
+    padding-right: 15vh;
+    padding-left: 16vh;
+    max-width: 308px;
+    text-align: center;
+
+}
+
+
+
+
+
