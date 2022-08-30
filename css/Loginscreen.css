@@ -1,36 +1,19 @@
 body {
     overflow-x: hidden;
     height: 100vh;
-    background-color: violet;
-    
 }
 
 .body-container {
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: #ebebeb;
+    background-color: #114061;
     overflow-y: hidden;
 }
-
-.body-container:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0%;
-    top: -84%;
-    width: 100%;
-    height: 190%;
-    background-image: url(/Images/background.png);
-    background-repeat: no-repeat;
-    background-position: left 34% bottom 8%;
-    background-size: cover;
-  }
 
 .body-wrapper {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     height: 100%;
     margin-left: 3.5vh;
@@ -48,7 +31,6 @@ body {
 
 .logo-text-wrapper {
     margin-top: 55%;
-
 }
 
 .logo {
@@ -87,11 +69,6 @@ body {
     z-index: 5;
 }
 
-.button-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
 .username-wrapper, .password-wrapper {
     display: flex;
@@ -140,20 +117,6 @@ span#myPassword {
     position: absolute;
 }
 
-.button-member {
-    padding: 1vh 5vh 1vh 5vh;
-    color: white;
-    border-radius: 0.5vh;
-    font-weight: 700;
-    font-size: 19px;
-    border: none;
-    outline: none;
-    background-color: var(--HiPerksOranje);
-    padding-right: 5vh;
-    padding-left: 5vh;
-    width:200%;
-}
-
 #password-visibility {
     cursor: pointer;
 }
@@ -177,37 +140,66 @@ span#myPassword {
     text-decoration-color: white;
 }
 
-.button-login{
-    padding: 2vh 5vh 2vh 5vh;
+.button-member {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: var(--HiPerksOranje);
+    padding: 14px 28px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
     color: white;
     border-radius: 0.5vh;
-    font-weight: 700;
-    font-size: 19px;
+  }
+  
+
+.button-login{
+    display: block;
+    width: 100%;
     border: none;
-    outline: none;
     background-color: var(--HiPerksOranje);
-    padding-right: 15vh;
-    padding-left: 16vh;
-    max-width: 308px;
+    padding: 14px 28px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
     text-align: center;
+    color: white;
+    border-radius: 0.5vh;
+    margin-bottom: 4%;
 }
 .button-register{
 
-    padding: 2vh 5vh 2vh 5vh;
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: var(--HiPerksOranje);
+    padding: 14px 28px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
     color: white;
     border-radius: 0.5vh;
-    font-weight: 700;
-    font-size: 19px;
-    border: none;
-    outline: none;
-    background-color: var(--HiPerksOranje);
-    padding-right: 15vh;
-    padding-left: 16vh;
-    max-width: 308px;
-    text-align: center;
 
 }
-
+@media only screen and (max-width: 600px) {
+    .body-container:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0%;
+        top: -84%;
+        width: 100%;
+        height: 190%;
+        background-image: url(/Images/background.png);
+        background-repeat: no-repeat;
+        background-position: left 34% bottom 8%;
+        background-size: cover;
+        background-color: white
+      }
+  }
 
 
 

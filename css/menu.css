@@ -1,0 +1,17 @@
+nav {
+    position: fixed;
+    height: 10vh;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--HiPerksBlauw);
+    z-index: 2;
+}
+ul
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    
+}

@@ -1,0 +1,97 @@
+<!-- Personal Homepage-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#009578">
+
+        <title>Home</title>
+        <link rel="stylesheet" href="css/sidemenu.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/Homepage.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href=""><span class="material-icons md-36">search</span></a></li>
+                <li><a href=""><span class="material-icons md-36">supervised_user_circle</span></a></li>
+                <li><a href=""><span id="button-highlight" class="material-icons md-36">home</span></a></li>
+                <li><a href=""><span class="material-icons md-36">bookmarks</span></a></li>
+                <li><a href=""><span class="material-icons md-36">assessment</span></a></li>
+            </ul>
+        </nav>
+
+        <div class="profile-container">
+            <div class="profile-wrapper">
+                <div class="profile-info">
+                    <div class="profile-header">"Gamer-tag"</div>
+                    <p>
+
+                    </p>
+                </div>
+                <button class="openbtn" onclick="openNav()"><span class="material-icons md-66">manage_accounts</span></button>
+            </div>
+        </div>
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="material-icons md-66">close</span></a>
+            <h1>Profiel</h1>
+            <img src="Images/user.png">
+            <div class="links">
+                <a href="#">Upload nieuwe profielfoto</a>
+                <a href="#">Instellingen</a>
+                <a href="index.html">Uitloggen</a>
+            </div>
+            
+        </div>
+        
+            <div class="body-container">
+                <div class="body-wrapper">
+                    <a href="index">
+                        <div class="HiPerks-wrapper">
+
+                                <img class="hiperks-icon" src="/Images/BeperkingIcon.png" >
+
+                            <div class="HiPerks-content">
+                                <h2>Mijn bepkeringen</h2>
+                                <p>Voeg hier de beperking toe die bij jou van toepassingen is.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="index.html">
+                        <div class="HiPerks-wrapper1">
+                            
+                                <img class="hiperks-icon" src="/Images/Oranje_algemeen_games.ico" >
+                            
+                            <div class="HiPerks-content">
+                                <h2>Jou favorieten games</h2>
+                                <p>Zoek en selecteer hier je favorieten games.</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+
+                    
+
+                   
+                </div>
+            </div>
+        
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "300px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+            }
+        </script>
+    </body>
+    
+</html>

@@ -1,0 +1,87 @@
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px
+}
+
+.sidebar h1 {
+    position: relative;
+    color: black;
+    top: 0;
+    left: 11.5vh;
+}
+
+.sidebar img {
+    width: 145px;
+    margin-top: 2vh;
+    margin-left: 9vh;
+}
+
+.links a {
+    padding: 8px 8px 8px 32px;
+    font-size: 14pt;
+}
+
+.sidebar a {
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.sidebar a:hover {
+    color: var(--HiPerksOranje);
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.subtractions {
+    position: absolute;
+    right: -100px;
+    bottom: 40px;
+}
+
+.subtractions img {
+    width: 400px;
+}
+
+.openbtn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.closebtn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    top: 0;
+    left: -10px;
+    position: absolute;
+}
+
+.openbtn:hover {
+    color: var(--HiPerksBlauw);
+}
+
+.body-container {
+    transition: margin-left .5s;
+}
