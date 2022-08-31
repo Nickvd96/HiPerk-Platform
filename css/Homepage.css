@@ -52,6 +52,7 @@ body::-webkit-scrollbar {
     font-size: 48px;
     font-weight: 700;
     text-shadow: 1px 1px 10px #b3b3b3;
+    margin-left: 50%;
 }
 
 .profile-function {
@@ -70,6 +71,7 @@ body::-webkit-scrollbar {
     background-color: white;
     z-index: 1;
     border-radius: 5px 5px 0 0;
+    margin-bottom: 25%;
 
 }
 
@@ -81,28 +83,14 @@ body::-webkit-scrollbar {
     margin-right: 3.5vh;
 }
 
-.HiPerks-wrapper::before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    bottom: 0%;
-    width: 100%;
-    height: 100%;
-    filter: grayscale(100%);
-    background-image: url('/Images/careerBackground.png');
-    background-repeat: no-repeat;
-    background-position: right 0% bottom 0%;
-    background-size: cover;
-    z-index: 1;
-}
+
 
 .HiPerks-wrapper {
     position: relative;
     display: flex;
     flex-direction: row;
-    margin-bottom: 1.75vh;
-    margin-top: 2vh;
-    min-height: 18vh;
+    margin-top: 1vh;
+    min-height: 16vh;
     width: 100%;
     border-radius: 0.8vh;
     box-shadow: 1px 1px 10px #b3b3b3;
@@ -111,26 +99,128 @@ body::-webkit-scrollbar {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
+    max-width: 50%;
+    align-self: center;
+    margin-left: 25%;
+    max-height: 1vh;
 }
 .HiPerks-wrapper1 {
     position: relative;
     display: flex;
     flex-direction: row;
-    margin-bottom: 1.75vh;
-    margin-top: 2vh;
-    min-height: 18vh;
+    margin-top: 1vh;
+    min-height: 16vh;
     width: 100%;
     border-radius: 0.8vh;
     box-shadow: 1px 1px 10px #b3b3b3;
     color: var(--white);
-    background-image: url('/Images/Homepagebuttons/Gamingbutton2.png');
+    background-image: url('/Images/Homepagebuttons/Gamingbutton1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    filter: opacity(90%);
     z-index: 1;
+    max-width: 50%;
+    align-self: center;
+    margin-left: 25%;
+    max-height: 1vh;
+}
+.HiPerks-wrapper2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1vh;
+    min-height: 16vh;
+    width: 100%;
+    border-radius: 0.8vh;
+    box-shadow: 1px 1px 10px #b3b3b3;
+    color: var(--white);
+    background-image: url('/Images/Homepagebuttons/Gamingbutton1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    max-width: 50%;
+    align-self: center;
+    margin-left: 25%;
+    max-height: 1vh;
+}
+.HiPerks-wrapper3 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1vh;
+    min-height: 16vh;
+    width: 100%;
+    border-radius: 0.8vh;
+    box-shadow: 1px 1px 10px #b3b3b3;
+    color: var(--white);
+    background-image: url('/Images/Homepagebuttons/Gamingbutton1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    max-width: 50%;
+    align-self: center;
+    margin-left: 25%;
+    max-height: 1vh;
+}
+.HiPerks-wrapper4 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1vh;
+    min-height: 16vh;
+    width: 100%;
+    border-radius: 0.8vh;
+    box-shadow: 1px 1px 10px #b3b3b3;
+    color: var(--white);
+    background-image: url('/Images/Homepagebuttons/Gamingbutton1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    max-width: 50%;
+    align-self: center;
+    margin-left: 25%;
+    max-height: 1vh;
+}
+.HiPerks-wrapper5 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1vh;
+    min-height: 16vh;
+    width: 100%;
+    border-radius: 0.8vh;
+    box-shadow: 1px 1px 10px #b3b3b3;
+    color: var(--white);
+    background-image: url('/Images/Homepagebuttons/Gamingbutton1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    max-width: 50%;
+    align-self: center;
+    margin-left: 25%;
+    max-height: 1vh;
 }
 
 .HiPerks-wrapper > .HiPerks-content > h2 {
+    position: relative;
+    z-index: 2;
+}
+.HiPerks-wrapper1 > .HiPerks-content > h2 {
+    position: relative;
+    z-index: 2;
+}
+.HiPerks-wrapper2 > .HiPerks-content > h2 {
+    position: relative;
+    z-index: 2;
+}
+.HiPerks-wrapper3 > .HiPerks-content > h2 {
+    position: relative;
+    z-index: 2;
+}
+.HiPerks-wrapper4 > .HiPerks-content > h2 {
+    position: relative;
+    z-index: 2;
+}
+.HiPerks-wrapper5 > .HiPerks-content > h2 {
     position: relative;
     z-index: 2;
 }
@@ -138,7 +228,47 @@ body::-webkit-scrollbar {
 .HiPerks-wrapper > .HiPerks-content > p {
     position: relative;
     color: white;
-    text-shadow: 1px 1px 5px var(--bluegreen);
+
+    z-index: 2;
+    padding-bottom: 1vh;
+    
+}
+.HiPerks-wrapper1 > .HiPerks-content > p {
+    position: relative;
+    color: white;
+
+    z-index: 2;
+    padding-bottom: 1vh;
+    
+}
+.HiPerks-wrapper2 > .HiPerks-content > p {
+    position: relative;
+    color: white;
+
+    z-index: 2;
+    padding-bottom: 1vh;
+    
+}
+.HiPerks-wrapper3 > .HiPerks-content > p {
+    position: relative;
+    color: white;
+
+    z-index: 2;
+    padding-bottom: 1vh;
+    
+}
+.HiPerks-wrapper4 > .HiPerks-content > p {
+    position: relative;
+    color: white;
+
+    z-index: 2;
+    padding-bottom: 1vh;
+    
+}
+.HiPerks-wrapper5 > .HiPerks-content > p {
+    position: relative;
+    color: white;
+
     z-index: 2;
     padding-bottom: 1vh;
     
@@ -150,11 +280,10 @@ body::-webkit-scrollbar {
     width: 80%;
     
 }
-
-.HiPerks-wrapper > .material-icons.md-66 {
-    margin-right: 2vh;
-    align-self: center;
+.HiPerks-content > p{
+    line-height: 1em;
 }
+
 .hiperks-icon{
     width: 66px;
     height: 66px;
@@ -162,31 +291,30 @@ body::-webkit-scrollbar {
     align-self: center;
 }
 
-
 nav > ul {
     z-index: 2;
 }
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 480px) {
     h2 {
-        font-size: 18px;
+        font-size: 15px;
+        margin-bottom: 1vh;
     }
     p{
-        font-size: 14px;
-        margin-right: 5px;
+        font-size: 13px;
+        margin-right: 11px;
+        font-weight: 100;
     }
     .profile-header{
         font-size: 40px;
         align-self: center;
     }
-}
-
-@media screen and (max-width: 345px) {
-    h2 {
-        font-size: 20px;
+    .HiPerks-wrapper, .HiPerks-wrapper1, .HiPerks-wrapper2, .HiPerks-wrapper3, .HiPerks-wrapper4, .HiPerks-wrapper5{
+        max-width: 100%;
+        margin-left: 0%;
     }
-    p{
-        font-size: 10px;
-        margin-right: 5px;
+    .body-container{
+        margin-bottom: 110%
     }
+  
 }
