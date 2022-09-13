@@ -1,0 +1,124 @@
+<!-- overzicht van alle favorieten: opleidingen, functies & trainingen -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#009578">
+        <title>Favorieten</title>
+
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/Beperkingen.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/2db077450d.js" crossorigin="anonymous"></script>
+        
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="/zoeken.html"><span class="material-icons md-36">search</span></a></li>
+                <li><a href="/afdelingen.html"><span class="material-icons md-36">supervised_user_circle</span></a></li>
+                <li><a href="/home.html"><span class="material-icons md-36">home</span></a></li>
+                <li><a href="/favorieten.html"><span id="button-highlight" class="material-icons md-36">bookmarks</span></a></li>
+                <li><a href="/zelftest.html"><span class="material-icons md-36">assessment</span></a></li>
+            </ul>
+        </nav>
+
+        <div class="page-header">
+            <a href="#" onclick="javascript:window.history.back(-1);return false;"><span class="material-icons md-48">arrow_back_ios</span></a>
+            <h1>Mijn Beperkingen</h1>
+            <img class="hiperks-icon" src="/Images/BeperkingIcon.png" >
+        </div>
+
+        <div class="body-container">
+            <div class="body-wrapper">
+
+                <div class="label-content-beperkingen">
+                
+                    <div class="label-description">
+                        <p>Dit is een tekst voor de beschrijving van de zelftest. Dit is een tekst voor de beschrijving van de zelftest.</p>
+                    </div>
+                </div>
+<!-- SEARCHBAR -->
+                <div class="search-wrapper1">
+                    <span class="material-icons md-28">search</span>
+                    <input type="text" class="search-field" placeholder="Zoeken">
+                </div>
+
+<!-- FILTER BUTTONS -->
+                <div class="filter-wrapper">
+                    <div id="filter-alles" class="filter">Alles</div>
+                    <div id="filter-Afasie" class="filter">Afasie</div>
+                    <div id="filter-Fysiek" class="filter">Fysiek</div>
+                    <div id="filter-Lichaamelijk" class="filter">Lichaamelijk</div>
+                </div>
+
+<!-- LABEL LIST -->
+                <div class="label-container">
+                    
+                    
+                        
+                        <div id="filter-Afasie" class="label Afasie">
+                            <img class="hiperks-icon-beperkingen" src="/Images/BeperkingIcon.png" >
+                            <div class="label-content">
+                            <a href="detailFuncties.html">
+                                <h2>Afasie 1</h2>
+                                <p>Bekijk hier alle informatie van de functie</p>
+                            </a>
+                            </div>
+                            <span><div class="material-icons md-48" id="bookmark" onclick="myFavorite()">bookmark_border</div></span>
+                        </div>
+                    
+                    
+                        
+                        <div id="filter-Fysiek" class="label Fysiek">
+                            <img class="hiperks-icon-beperkingen" src="/Images/BeperkingIcon.png" >
+                            <div class="label-content">
+                                <a href="detailFuncties.html">
+                                    <h2>Fysiek 1</h2>
+                                    <p>Bekijk hier alle informatie van de functie</p>
+                                </a>
+                            </div>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        
+                    
+                    
+                    
+                        
+                        <div id="filter-Lichaamelijk" class="label Lichaamelijk">
+                            <img class="hiperks-icon-beperkingen" src="/Images/BeperkingIcon.png" >
+                            <div class="label-content">
+                                <a href="detailFuncties.html">
+                                    <h2>Lichaamelijk 1</h2>
+                                    <p>Bekijk hier alle informatie van de functie</p>
+                                </a>
+                            </div>
+                            <i id="menu-icon" class="fa fa-bookmark" onclick="changeIcon(this)"></i>
+
+                        </div>
+                    
+
+
+                    
+                </div>
+
+            </div>
+        </div>
+        <script src="js/Filter.js"></script>
+        <script src="js/favourite.js"></script>
+    </body>
+    <script>
+        // normal function 
+        let changeIcon = function(icon) {
+            icon.classList.toggle('fa-bookmark-o')
+        }
+        // arrow function 
+       // changeIcon = (icon) => icon.classList.toggle("fa-times");
+    </script>
+</html>

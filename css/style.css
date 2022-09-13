@@ -110,7 +110,7 @@ p {
     line-height: 1.5em;
 }
 
-.search-wrapper {
+.search-wrapper1 {
     display: flex;
     flex-direction: row;
     margin-top: 2.25vh;
@@ -122,7 +122,9 @@ p {
     width: 100%;
     background-color: var(--gray);
     border-radius: 5vh;
+    display: none;
 }
+
 
 .search-wrapper > .material-icons.md-28 {
     margin-left: 0.75vh;
@@ -231,48 +233,29 @@ p {
     z-index: 2;
 }
 
-.label:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    right: 10%;
-    bottom: 0%;
-    width: 30%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: right 0% bottom 0%;
-    background-size: contain;
-    z-index: 1;
-}
-
-.label.afdeling:before {
-    background-image: url('/Images/afdelingShapesSmall.png');
-}
-
-.label.functie:before {
-    background-image: url('/Images/functieShapesSmall.png');
-}
-
-.label.opleiding:before {
-    background-image: url('/Images/opleidingShapesSmall.png');
-}
 
 
-.label.afdeling {
+.label.Afasie {
     position: relative;
-    background: linear-gradient(var(--gray), #a5cee1);
+    background: lightblue;
 }
 
-.label.functie {
+.label.Fysiek {
     position: relative;
     
-    background: linear-gradient(var(--gray), #e8cf95);
+    background: lightseagreen;
 }
 
-.label.opleiding {
+.label.Lichaamelijk {
     position: relative;
-    background: linear-gradient(var(--gray), #d9e274);
+    background: lightskyblue;
+    
 }
+.label.Lichaamelijk{
+    position: relative;
+    background: lightskyblue;    
+}
+
 
 .Contactpersoon-img
 {
