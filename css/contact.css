@@ -129,14 +129,21 @@
     padding: 1vh;
     font-size: 14px;
     background-color: #E7E7E7;
-    border-bottom-left-radius: 5%;
-    border-bottom-right-radius: 5%;
 }
+.label-description1 {
+    padding: 1vh;
+    font-size: 14px;
+    background-color: #E7E7E7;
+    padding-top: 2vh;
+}
+
 .material-icons md-6{
     font-size: 60px;
 }
 h2{
     font-size: 20px;
+    padding-bottom: 4vh;
+    text-align: center;
 }
 .fa{
     font-size: 2em;
@@ -159,6 +166,78 @@ h2{
 .fa{
     color: var(--HiPerksBlauw);
 }
+.label-content-beperkingen1{
+    padding-top: 2vh;
+}
 
 
+.username-wrapper, .password-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: -1vh;
+    margin-bottom: 2.25vh;
+    align-items: center;
+    height: 6vh;
+    background-color: white;
+    border-radius: 5vh;
+}
 
+#password-visibility {
+    right: 1vh;
+    position: absolute;
+}
+
+.username-field {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.textarea{
+    width: 98%;
+    height: 12vh;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.button-member {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: var(--HiPerksOranje);
+    padding: 14px 28px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    border-radius: 0.5vh;
+    margin-top: 2vh;
+  }
+  @media only screen and (max-width: 600px){
+    .textarea{
+        width: 90%;
+    }
+  }

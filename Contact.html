@@ -1,0 +1,100 @@
+<!-- overzicht van alle favorieten: opleidingen, functies & trainingen -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#009578">
+        <title>Favorieten</title>
+
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/2db077450d.js" crossorigin="anonymous"></script>
+        
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="/zoeken.html"><span class="material-icons md-36">search</span></a></li>
+                <li><a href="/afdelingen.html"><span class="material-icons md-36">supervised_user_circle</span></a></li>
+                <li><a href="/home.html"><span class="material-icons md-36">home</span></a></li>
+                <li><a href="/favorieten.html"><span id="button-highlight" class="material-icons md-36">bookmarks</span></a></li>
+                <li><a href="/zelftest.html"><span class="material-icons md-36">assessment</span></a></li>
+            </ul>
+        </nav>
+
+        <div class="page-header">
+            <a href="#" onclick="javascript:window.history.back(-1);return false;"><span class="material-icons md-48">arrow_back_ios</span></a>
+            <h1>Contact</h1>
+            <img class="hiperks-icon" src="/Images/BeperkingIcon.png" >
+        </div>
+
+        <div class="body-container">
+            <div class="body-wrapper">
+
+                <div class="label-content-beperkingen">
+                
+                    <div class="label-description">
+                        <p>De HiPerks Foundation is een stichting voor jongeren (12 t/m 35 jaar) met een lichamelijke beperking en/of niet-aangeboren hersenletsel (NAH) 
+                            voor wie het spelen van games niet altijd vanzelfsprekend is. 
+                            Gelukkig zijn er steeds meer mogelijkheden om gamen ook voor hen toegankelijk te maken.</p>
+                            <br>
+                            <p>Heb je vragen? of wil je meer informatie over HiPerks.</p>
+                            <p>Neem dan contact op via het onderstaande formulier.</p>
+                    </div>
+                </div>
+<!-- SEARCHBAR -->
+<div class="label-content-beperkingen1">
+    
+    <div class="label-description1">
+        <h2>Contactformulier</h2>
+        <form name="myForm" method="POST" action="">
+            <div class="login-container">
+                
+                <div class="login-wrapper">
+                    
+                    <div class="username-wrapper">
+                        <input type="email" name="degebruikersnaam" class="username-field" placeholder="E-mail">
+                    </div>
+                    <div>
+                        <textarea id="password-field" name="password-field" class="textarea" placeholder="Voeg hier uw bericht in."></textarea>
+                    </div>
+                    <div class="button-wrapper">
+                        <a href="ContactSend.html"><button type="button" onclick="return validateForm()" class="button-member">Versturen</button></a>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+    </div>
+</div>      
+                        
+                    
+
+
+                    
+                </div>
+
+            </div>
+        </div>
+    </body>
+    <script>
+        function validateForm() {
+        var x = document.forms["myForm"]["degebruikersnaam"].value;
+        var y = document.forms["myForm"]["dewachtwoord"].value;
+            if (x == "") {
+                alert("U moet uw E-mail invoeren");
+                return false;
+            } else if (y == "") {
+                alert("U moet uw Bericht invoeren");
+                return false;
+            }
+        }
+        </script>
+</html>

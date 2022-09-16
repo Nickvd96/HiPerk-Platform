@@ -8,11 +8,11 @@ function applyFilter() {
     // CHANGE COLORS OF FILTER BUTTONS AND UPDATE CURRENTFILTER TO TARGET
     for (let j = 0 ; j < filters.length; j++) {
         if (filters[j].id === currentFilter) {
-            filters[j].style.backgroundColor = 'var(--darkpurple)';
+            filters[j].style.backgroundColor = 'var(--HiPerksOranje)';
         }
 
         else  {
-            filters[j].style.backgroundColor = 'var(--lightpurple)';
+            filters[j].style.backgroundColor = 'var(--HiPerksBlauw)';
         }
     }
 
