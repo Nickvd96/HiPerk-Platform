@@ -24,10 +24,11 @@ body::-webkit-scrollbar {
     display: flex;
     height: 100%;
     width: 100%;
-    background-image: url('/Images/profileBackground.png');
+    background-image: url('/Images/Over_HiPerks_4.original.png');
+    opacity: 80%;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} 
 
 .profile-container > .profile-wrapper > .material-icons.md-66 {
     margin-top: 0.5vh;
@@ -65,7 +66,7 @@ body::-webkit-scrollbar {
 }
 
 .body-container {
-    margin-top: -2vh;
+    margin-top: 1vh;
     height: 60vh;
     width: 100%;
     background-color: white;
@@ -307,7 +308,8 @@ nav > ul {
     }
     .profile-header{
         font-size: 40px;
-        align-self: center;
+        margin-left: 0%;
+        text-align: center;
     }
     .HiPerks-wrapper, .HiPerks-wrapper1, .HiPerks-wrapper2, .HiPerks-wrapper3, .HiPerks-wrapper4, .HiPerks-wrapper5{
         max-width: 100%;
@@ -316,5 +318,14 @@ nav > ul {
     .body-container{
         margin-bottom: 110%
     }
+    .profile-wrapper {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        background-image: url('/Images/Gaming_girl.jpg');
+        opacity: 80%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    } 
   
 }

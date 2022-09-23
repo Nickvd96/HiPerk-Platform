@@ -1,0 +1,142 @@
+<!-- overzicht van alle favorieten: opleidingen, functies & trainingen -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#009578">
+        <title>Favorieten</title>
+
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/Gameverzoek.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/2db077450d.js" crossorigin="anonymous"></script>
+        
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="/zoeken.html"><span class="material-icons md-36">search</span></a></li>
+                <li><a href="/afdelingen.html"><span class="material-icons md-36">supervised_user_circle</span></a></li>
+                <li><a href="/home.html"><span class="material-icons md-36">home</span></a></li>
+                <li><a href="/favorieten.html"><span id="button-highlight" class="material-icons md-36">bookmarks</span></a></li>
+                <li><a href="/zelftest.html"><span class="material-icons md-36">assessment</span></a></li>
+            </ul>
+        </nav>
+
+        <div class="page-header">
+            <a href="#" onclick="javascript:window.history.back(-1);return false;"><span class="material-icons md-48">arrow_back_ios</span></a>
+            <h1>Game verzoek</h1>
+            <img class="hiperks-icon" src="/Images/BeperkingIcon.png" >
+        </div>
+
+        <div class="body-container">
+            <div class="body-wrapper">
+
+                <div class="label-content-beperkingen">
+                
+                    <div class="label-description">
+                        <p>De HiPerks Foundation is in bezit van meerdere games op hun platform die informatie bieden over welke game kan worden gespeeld 
+                            met welke bepeperking natuurlijk kan het zijn dat jou game hier niet tussen staat. Daarvoor hebben we het onderstaande formulier
+                            waarin jij je eigen game kan laten toevoegen in ons systeem.
+                        </p>
+                            <br>
+                            <p>Vul daarom het onderstaande formulier volledig in.</p>
+                            <p>en als je credits wilt voor jou bijdragen voer dan onderin jou Gamer-tag in.</p>
+                    </div>
+                </div>
+<!-- SEARCHBAR -->
+<div class="label-content-beperkingen1">
+    
+    <div class="label-description1">
+        <h2>Game aanvraag Formulier</h2>
+        <form name="myForm" method="POST" action="Homepage.html">
+            <div class="login-container">
+                
+                <div class="login-wrapper">
+                    
+                    <div class="">
+                        <p class="Gameverzoektitel">Titel van de Game</p>
+                        <input type="email" name="degebruikersnaam" class="username-field" placeholder="Game titel">
+                    </div>
+                    <div>
+                        <p class="Gameverzoek">Beschrijving van de game</p>
+                        
+                        <textarea id="textarea" name="textarea" class="textarea" placeholder="Plaats hier je informatie over de game"></textarea>
+                    </div>
+                    <div>
+                        <p class="Gameverzoek">Genre</p>
+                        <p for="Genre" class="Gameverzoekinfo">Kies hier de Genre die het best bij het spel past</p>
+                        <select id="Genre" name="Genre" class="selectGenre">
+                            <option value="Actie">Action</option>
+                            <option value="Action-adventure">Action-adventure</option>
+                            <option value="Adventure">Adventure</option>
+                            <option value="Puzzle">Puzzle</option>
+                            <option value="Role-playing">Role-playing</option>
+                            <option value="Simulation">Simulation</option>
+                            <option value="Strategy">Strategy</option>
+                            <option value="Sport">Sport</option>
+                            <option value="MMO">MMO</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <p class="Gameverzoek">Beperkingen</p>
+                        <p for="beperking" class="Gameverzoekinfo">Met welke bepeperkingkan dit spel gespeeld worden</p>
+                        <select id="beperking" name="beperking" class="selectGenre">
+                            <option value="Afasie">Afasie</option>
+                            <option value="Visuele">Visuele beperking</option>
+                            <option value="lichamelijke">lichamelijke bepeperking</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p class="Gameverzoek">Aantal spelers</p>
+                        <p for="beperking" class="Gameverzoekinfo">Met hoeveel personen kan het spel gespeeld worden</p>
+                        <select id="beperking" name="beperking" class="selectGenre">
+                            <option value="Solo">Soloplayer</option>
+                            <option value="Multiplayer">Multiplayer</option>
+                        </select>
+                    </div>
+                    <div class="">
+                        <p class="Gamer-tag">Gamer-tag</p>
+                        <input type="text" name="degebruikersnaam" class="username-field" placeholder="Gamer-tag">
+                    </div>
+                    
+                    <div class="button-wrapper">
+                        <a href="GameverzoekSend.html"><button type="button" onclick="return validateForm()" class="button-member">Versturen</button></a>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+    </div>
+</div>      
+                        
+                    
+
+
+                    
+                </div>
+
+            </div>
+        </div>
+    </body>
+    <script>
+        function validateForm() {
+        var x = document.forms["myForm"]["degebruikersnaam"].value;
+        var y = document.forms["myForm"]["dewachtwoord"].value;
+            if (x == "") {
+                alert("U moet uw E-mail invoeren");
+                return false;
+            } else if (y == "") {
+                alert("U moet uw Bericht invoeren");
+                return false;
+            }
+        }
+        </script>
+</html>
