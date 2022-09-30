@@ -1,0 +1,192 @@
+.label > .material-icons.md-66 {
+    font-size: 60px;
+    position: relative;
+    top: 1vh;
+    margin-right: 10px;
+    fill: #fff;
+}
+.page-header {
+    background-color: var(--HiPerksBlauw);
+}
+
+.filter-wrapper {
+    justify-content: space-between;
+    padding-top: 1vh;
+}
+
+
+
+
+.page-header {
+    padding: 0vh 0vh 0.5vh 0vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-header > .material-icons.md-48, .page-header > .material-icons.md-66 {
+    margin-top:0.5vh;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    height: fit-content;
+    color: white;
+}
+
+.body-container {
+    height: 60vh;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    border-radius: 5px 5px 0 0;
+}
+
+.body-wrapper {
+    display: flex;
+    height: fit-content;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 3.5vh;
+    margin-right: 3.5vh;
+}
+
+.page-header h1 {
+    position: absolute;
+    z-index: 1;
+    top: 2vh;
+    font-size: 26px;
+    padding-right: 4vh;
+}
+
+.page-header a {
+    margin-top: 1vh;
+    margin-left: 1vh;
+    left: 0;
+    width: 100vw;
+}
+
+/* ADD SPACING TO LEFT OF BACK BUTTON */
+.page-header > .material-icons.md-48 {
+    margin-left: 3.5vw;
+}
+
+.filter {
+    cursor: pointer;
+    
+    
+}
+
+.filter-wrapper {
+    justify-content: space-between;
+    
+    
+}
+
+.filter-wrapper > div {
+    font-size: 14px;
+    width: fit-content;
+    font-weight: 700;
+    color: white;
+
+    padding: 0.7vh 1vh 0.7vh 1vh;
+    border-radius: 0.5vh;
+    background-color: var(--HiPerksOranje);
+}
+
+
+/* SPACING FIX */
+.department-title {
+    margin-left: 0;
+}
+.label-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    z-index: 1;
+}
+
+.label.functie.description > .label-content > p, .label.functie.description > .label-content > h2 {
+    width: 100%;
+}
+
+.label.functie.description > .label-content > h2 {
+    font-size: 20px;
+}
+.hiperks-icon{
+    width: 50px;
+    height: 50px;
+    margin-right: 1vh;
+    align-self: center;
+}
+.hiperks-icon-beperkingen{
+    width: 50px;
+    height: 50px;
+    margin-right: 2vh;
+    align-self: center;
+}
+.label-description {
+    padding: 1vh;
+    font-size: 14px;
+    background-color: #E7E7E7;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+.material-icons md-6{
+    font-size: 60px;
+}
+h2{
+    font-size: 20px;
+}
+.fa{
+    font-size: 2em;
+    color:#fff;
+    cursor: pointer;
+    transition:0.3s;
+}
+.label.Lichaamelijk{
+    background-color: #E7E7E7;
+
+}
+.label.Lichaamelijk p{
+    color: black;
+    
+}
+.label.Lichaamelijk h2{
+    color: black;
+    
+}
+.fa{
+    color: var(--HiPerksBlauw);
+}
+.label-container{
+    top: 17vh;
+}
+.button-member {
+    width: 80%;
+    border: none;
+    background-color: var(--HiPerksOranje);
+    padding: 7px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    border-radius: 0.5vh;
+    margin-top: 1vh;
+  }
+@media screen and (max-width: 480px) {
+    .label-container{
+        top: 30vh;
+    }
+    .page-header h1 {
+        position: absolute;
+        z-index: 1;
+        top: 3vh;
+        font-size: 18px;
+        padding-right: 4vh;
+    }
+  
+}
+
+
+

@@ -23,6 +23,7 @@
 
 
 
+
 .page-header {
     padding: 0vh 0vh 0.5vh 0vh;
     display: flex;
@@ -136,6 +137,26 @@
     height: 50px;
     margin-right: 2vh;
     align-self: center;
+}
+.hiperks-icon-beperkingen-btn{
+    width: 50px;
+    height: 50px;
+    margin-right: 3vh;
+    align-self: center;
+}
+.hiperks-icon-beperkingen-btn1{
+    width: 30px;
+    height: 30px;
+    margin-left: 4vh;
+    align-self: center;
+    visibility: hidden;
+}
+.hiperks-icon-beperkingen-btn2{
+    width: 30px;
+    height: 30px;
+    margin-left: 8vh;
+    align-self: center;
+    visibility: hidden;
 }
 .label-description {
     padding: 1vh;
@@ -290,7 +311,7 @@ h2{
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 20px;
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -304,6 +325,13 @@ h2{
     overflow: hidden;
     background-color: #f1f1f1;
   }
+  .label > .label-content > h2, .label > .label-content > p {
+    display: flex;
+    color: var(--darkpurple);
+    width: 75%;
+    text-align: left;
+}
+
 
   @media only screen and (max-width: 600px){
     .textarea{
@@ -340,6 +368,26 @@ h2{
     }
     .username-field{
         width: 90%;
+    }
+    .hiperks-icon-beperkingen-btn1{
+        width: 30px;
+        height: 30px;
+        margin-left: 4vh;
+        align-self: center;
+        visibility: visible;
+    }
+    .hiperks-icon-beperkingen-btn2{
+        width: 30px;
+        height: 30px;
+        margin-left: 8vh;
+        align-self: center;
+        visibility: visible;
+    }
+    .hiperks-icon-beperkingen-btn{
+        width: 30px;
+        height: 30px;
+        margin-right: 3vh;
+        align-self: center;
     }
   
 }

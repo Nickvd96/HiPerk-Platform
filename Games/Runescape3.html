@@ -1,0 +1,140 @@
+<!-- Personal Homepage-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#009578">
+
+        <title>Runescape 3 - HiPerks -</title>
+        <link rel="stylesheet" href="../css/sidemenu.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/menu.css">
+        <link rel="stylesheet" href="../css/Runescape3.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href=""><span class="material-icons md-36">search</span></a></li>
+                <li><a href=""><span class="material-icons md-36">supervised_user_circle</span></a></li>
+                <li><a href=""><span id="button-highlight" class="material-icons md-36">home</span></a></li>
+                <li><a href=""><span class="material-icons md-36">bookmarks</span></a></li>
+                <li><a href="https://www.hiperks.com/blog?page=1"><span class="material-icons md-36">assessment</span></a></li>
+            </ul>
+        </nav>
+        <div class="page-header">
+            <a href="#" onclick="javascript:window.history.back(-1);return false;"><span class="material-icons md-48">arrow_back_ios</span></a>
+            <h1>Runescape 3</h1>
+            <img class="hiperks-icon" src="/Images/BeperkingIcon.png" >
+        </div>
+
+        <div class="profile-container">
+            <div class="profile-wrapper">
+                <div class="profile-info">
+                </div>
+            </div>
+        </div>
+
+            
+        </div>
+        
+        <div class="body-container">
+            <div class="body-wrapper">
+
+                <div class="label-content-beperkingen">
+                
+                    <div class="label-description">
+                        <p>Hier kun je alle informatie vinden over het spel Runescape 3 waaronder een review, analyse en meer.
+                        </p>
+                    </div>
+                </div>
+
+                    <div class="label-content-beperkingen1">
+                        
+                        <div class="label-description1">
+                            <h2></h2>
+                                <div class="login-container">
+                                    
+                                    <div class="login-wrapper">
+                                        
+                                        
+                            
+                        </div>
+<!-- uitklapbaar menu over Genres -->
+                        <button type="button" class="collapsible">
+                          Review
+                        </button>
+                    <div class="content">
+                        <h2>Runescape 3 review</h2>
+                        <p>Klaar om terug geworpen te worden naar je jeugd? Dat was voor mij wel het geval toen ik Runescape na meer dan 15 jaar weer opstartte.
+                            Ik verwachtte mijn oude geblokte en gepixelde personage terug te zien, waar ik rond 2005 afscheid van had genomen. 
+                            Niets was minder waar, wat ik zag leek he-le-maal niet meer op het ‘oude’ Runescape dat ik mij herinnerde. 
+                            Graag neem ik je mee in de wereld van Runescape dat in een nieuw jasje is gestoken.
+                           </p>
+                               <br>
+                           <p>
+                               Runescape is een van de oudste MMORPG’s op de markt en is zich door de jaren heen blijven ontwikkelen. 
+                               In Runescape bestuur je je character in de fantasy-wereld van Gielinor – een wereld waar trollen, goblins en draken op elke straathoek te vinden zijn.
+                           </p>
+                      
+
+                        </div>
+                        <button type="button" class="collapsible">
+                            Analyse
+                          </button>
+                          <div class="content">
+                        <h2>Pluspunten</h2>
+                        <ul class="Pluspunten">
+                            <li>Het spel is point-and-click en valt dus goed te spelen met een hand</li>
+                            <li>Het spel wordt gespeeld door veel mensen, samen spelen met anderen maakt het spel nóg leuker</li>
+                            <li>Je verveelt je geen moment met de hoeveelheid quests, skills en andere dingen om te doen</li>
+                        </ul>
+                        <h2>Minpunten</h2>
+                        <ul class="Pluspunten">
+                            <li>
+                                De veelheid aan dingen om te doen kan op het begin overweldigend zijn</li>
+                            <li>Je betaalt maandelijks een abonnement om toegang te krijgen tot het hele spel</li>
+                        </ul>
+                        
+                      
+
+                        </div>
+                          
+                    </div>
+                    </div>
+                    </div>
+                    </div>                          
+                </div>
+
+            </div>
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+                
+                for (i = 0; i < coll.length; i++) {
+                  coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                      content.style.display = "none";
+                    } else {
+                      content.style.display = "block";
+                    }
+                  });
+                }
+                </script>
+                <script>
+                  // normal function 
+                  let changeIcon = function(icon) {
+                      icon.classList.toggle('fa-bookmark-o')
+                  }
+                  // arrow function 
+                 // changeIcon = (icon) => icon.classList.toggle("fa-times");
+              </script>
+
+       
+    </body>
+    
+</html>

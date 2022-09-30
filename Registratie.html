@@ -1,0 +1,76 @@
+<!-- Login pagina-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#009578">
+
+        <title>Registreren</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/registratie.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+        <!--PWA creation links start-->
+        <!--PWA creation links stops-->
+    </head>
+    <body>
+        <div class="body-container">
+            <div class="body-wrapper">
+
+                <div class="product-container">
+                    <div class="product-wrapper">                             
+                           <div class="logo-header">  
+                                <span class="material-icons md-120">person</span>
+                            </div>
+                    </div>
+                </div>
+                
+                <form name="myForm" method="POST" action="Homepage.html">
+                    
+                    <div class="login-container">
+                        
+                        <div class="login-wrapper">
+                            
+                            <div class="username-wrapper">
+                                <span class="material-icons md-28">account_circle</span>
+                                <input type="text" name="degebruikersnaam" class="username-field" placeholder="Gamer-tag">
+                            </div>
+                            <div class="username-wrapper">
+                                <span class="material-icons md-28">mail</span>
+                                <input type="text" name="degebruikersnaam" class="username-field" placeholder="E-mail">
+                            </div>
+                            <div class="password-wrapper">
+                                <span class="material-icons md-28">lock</span>
+                                <input type="password" name="dewachtwoord" class="password-field" id="thePassword" placeholder="Wachtwoord">
+                                <span id="password-visibility" class="material-icons md-28" onclick="passwordVisibility()">visibility</span>
+                            </div>
+                            <div class="button-wrapper">
+                                <a href="Loginscreen.html"><button type="button" onclick="return validateForm()" class="button-member">Aanmelden en inloggen</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="logo-header">
+                    <div class="logo-text-wrapper">
+                    <img src="Images/HiPerksLogo1.png" class="logo">
+                    </div>
+                </div>
+        </div>
+        <script>
+        function validateForm() {
+        var x = document.forms["myForm"]["degebruikersnaam"].value;
+        var y = document.forms["myForm"]["dewachtwoord"].value;
+            if (x == "") {
+                alert("U moet uw gebruikersnaam invoeren");
+                return false;
+            } else if (y == "") {
+                alert("U moet uw wachtwoord invoeren");
+                return false;
+            }
+        }
+        </script>
+        <script src="js/Password.js"></script>
+    </body>
+    
+</html>
