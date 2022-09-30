@@ -2,7 +2,12 @@ body {
     overflow-x: hidden;
     height: 100vh;
 }
-
+.WWvergeten{
+    font-weight: 700;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+}
 .body-container {
     position: relative;
     height: 100vh;
@@ -184,6 +189,7 @@ span#myPassword {
     border-radius: 0.5vh;
 
 }
+
 @media only screen and (max-width: 600px) {
     .body-container:before {
         content: ' ';

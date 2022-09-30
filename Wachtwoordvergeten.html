@@ -6,15 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="theme-color" content="#009578">
 
-        <title>Inloggen</title>
+        <title>Wachtwoord vergeten</title>
+        <link rel="stylesheet" href="css/registratie.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/Loginscreen.css">
+
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 
         <!--PWA creation links start-->
-        <link rel="manifest" href="/manifest.json">
-        <link rel="apple-touch-icon" href="/Images/logo192.png">
-        <script src="/js/PWA.js"></script>
         <!--PWA creation links stops-->
     </head>
     <body>
@@ -24,29 +22,27 @@
                 <div class="product-container">
                     <div class="product-wrapper">                             
                            <div class="logo-header">  
-                                <span class="material-icons md-120">person</span>
+                                <h1 class="WWvergeten">Vraag hier uw wachtwoord aan </h1>
                             </div>
                     </div>
                 </div>
-
+                
                 <form name="myForm" method="POST" action="Homepage.html">
+                    
                     <div class="login-container">
+                        
                         <div class="login-wrapper">
-
+                            
                             <div class="username-wrapper">
                                 <span class="material-icons md-28">account_circle</span>
-                                <input type="text" name="degebruikersnaam" class="username-field" placeholder="Gebruikersnaam">
+                                <input type="text" name="degebruikersnaam" class="username-field" placeholder="Gamer-tag">
                             </div>
                             <div class="password-wrapper">
-                                <span class="material-icons md-28">lock</span>
-                                <input type="password" name="dewachtwoord" class="password-field" id="thePassword" placeholder="Wachtwoord">
-                                <span id="password-visibility" class="material-icons md-28" onclick="passwordVisibility()">visibility</span>
-                            </div>
-                            <div class="ForgotPassword">
-                                <a href="Wachtwoordvergeten.html">Wachtwoord vergeten?</a>
+                                <span class="material-icons md-28">mail</span>
+                                <input type="password" name="dewachtwoord" class="password-field" id="thePassword" placeholder="E-mail">
                             </div>
                             <div class="button-wrapper">
-                                <a href="Homepage.html"><button type="button" onclick="return validateForm()" class="button-member">Inloggen</button></a>
+                                <a href="Loginscreen.html"><button type="button" onclick="return validateForm()" class="button-member">Wachtwoord aanvragen</button></a>
                             </div>
                         </div>
                     </div>
@@ -62,15 +58,14 @@
         var x = document.forms["myForm"]["degebruikersnaam"].value;
         var y = document.forms["myForm"]["dewachtwoord"].value;
             if (x == "") {
-                alert("U moet uw gebruikersnaam invoeren");
+                alert("U moet uw Gamer-tag invoeren");
                 return false;
             } else if (y == "") {
-                alert("U moet uw wachtwoord invoeren");
+                alert("U moet uw E-mail invoeren");
                 return false;
             }
         }
         </script>
-        <script src="js/Password.js"></script>
     </body>
     
 </html>
