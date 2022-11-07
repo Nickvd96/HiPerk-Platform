@@ -83,14 +83,26 @@
 }
 
 .filter-wrapper > div {
-    font-size: 14px;
+font-size: 14px;
     width: fit-content;
     font-weight: 700;
     color: white;
-
-    padding: 0.7vh 1vh 0.7vh 1vh;
+    padding: 1.7vh 1vh 1.7vh 1vh;
     border-radius: 0.5vh;
     background-color: var(--HiPerksOranje);
+}
+.label-container{
+    padding-bottom: 10vh;
+    margin-right: 3.5vh;
+    margin-left: 3.5vh;
+    top: 30.4vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 0;
 }
 
 
@@ -174,7 +186,7 @@ h2{
 }
 @media screen and (max-width: 480px){
     .label-container {
-        top: 30vh;
+        top: 36vh;
         /* background-color: yellow; */
     }
     

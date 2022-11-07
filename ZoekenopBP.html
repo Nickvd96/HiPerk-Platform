@@ -21,11 +21,11 @@
     <body>
         <nav>
             <ul>
-                <li><a href="/zoeken.html"><span class="material-icons md-36">search</span></a></li>
-                <li><a href="/afdelingen.html"><span class="material-icons md-36">supervised_user_circle</span></a></li>
-                <li><a href="/home.html"><span class="material-icons md-36">home</span></a></li>
-                <li><a href="/favorieten.html"><span id="button-highlight" class="material-icons md-36">bookmarks</span></a></li>
-                <li><a href="/zelftest.html"><span class="material-icons md-36">assessment</span></a></li>
+                <li><a href="https://discord.gg/tPjT7v3ueV"><img class="hiperks-menu-icon" src="/Images/discord-logo-png-7617.png" ></a></li>
+                <li><a href="FavorieteGames.html"><img class="hiperks-menu-icon" src="/Images/Oranje_algemeen_games.ico" ></a></li>
+                <li><a href="Homepage.html"><span id="button-highlight" class="material-icons md-36">home</span></a></li>
+                <li><a href=""><img class="hiperks-menu-icon" src="/Images/placeholder.ico" ></a></li>
+                <li><a href=""><img class="hiperks-menu-icon" src="/Images/placeholder.ico" ></a></li>
             </ul>
         </nav>
 
@@ -78,81 +78,42 @@
                                           <img class="hiperks-icon-beperkingen" src="/Images/beperkingen_Icons/Blauw_algemeen_afasie.png" >
                                           <div class="label-content">
                                               
-                                                  <h2>Afasie 4</h2>
+                                                  <h2>Afasie</h2>
                                                   <p>Bekijk hier alle informatie over afsaie 1</p>
                                               </a>
                                           </div>
-                                          <i id="menu-icon" class="fa fa-bookmark" onclick="changeIcon(this)"></i>
+                                          <i id="menu-icon" class="fa fa-bookmark-o" onclick="changeIcon(this)"></i>
                   
                                       </div>
                                     
                                       <div id="filter-Afasie" class="label Lichaamelijk">
-                                        <img class="hiperks-icon-beperkingen" src="/Images/beperkingen_Icons/Blauw_algemeen_afasie.png" >
+                                        <img class="hiperks-icon-beperkingen" src="/Images/beperkingen_Icons/Blauw_algemeen_lichamelijkebeperking.png" >
                                         <div class="label-content">
                                             
-                                                <h2>Afasie 4</h2>
+                                                <h2>Fysiek</h2>
                                                 <p>Bekijk hier alle informatie over afsaie 1</p>
                                             </a>
                                         </div>
-                                        <i id="menu-icon" class="fa fa-bookmark" onclick="changeIcon(this)"></i>
+                                        <i id="menu-icon1" class="fa fa-bookmark-o" onclick="changeIcon1(this)"></i>
                 
                                     </div>
-                                    
-                                      <div id="filter-Afasie" class="label Lichaamelijk">
-                                        <img class="hiperks-icon-beperkingen" src="/Images/beperkingen_Icons/Blauw_algemeen_afasie.png" >
-                                        <div class="label-content">
-                                           
-                                                <h2>Afasie 4</h2>
-                                                <p>Bekijk hier alle informatie over afsaie 1</p>
-                                            </a>
-                                        </div>
-                                        <i id="menu-icon" class="fa fa-bookmark" onclick="changeIcon(this)"></i>
-                
-                                    </div>
-                                    <div id="filter-Visueel" class="label Lichaamelijk">
+                                    <div id="filter-Afasie" class="label Lichaamelijk">
                                         <img class="hiperks-icon-beperkingen" src="/Images/beperkingen_Icons/Blauw_algemeen_gezichtsbeperking.png" >
                                         <div class="label-content">
                                             
-                                                <h2>Visueel 4</h2>
-                                                <p>Bekijk hier alle informatie over visueel 1</p>
+                                                <h2>Visueel</h2>
+                                                <p>Bekijk hier alle informatie over afsaie 1</p>
                                             </a>
                                         </div>
-                                        <i id="menu-icon" class="fa fa-bookmark" onclick="changeIcon(this)"></i>
+                                        <i id="menu-icon2" class="fa fa-bookmark-o" onclick="changeIcon2(this)"></i>
                 
                                     </div>
-                                    <div>
-                                        
                                     
-                                        <div id="filter-Visueel" class="label Lichaamelijk">
-                                          <img class="hiperks-icon-beperkingen" src="/Images/beperkingen_Icons/Blauw_algemeen_gezichtsbeperking.png" >
-                                          <div class="label-content">
-                                              
-                                                  <h2>Visueel 4</h2>
-                                                  
-                                              </a>
-                                          </div>
-                                          <i id="menu-icon" class="fa fa-bookmark" onclick="changeIcon(this)"></i>
-                  
-                                      </div>
+                                    
+                                   
                                   </div>
-                                  <div id="filter-Visueel" class="label Lichaamelijk">
-                                    <img class="hiperks-icon-beperkingen" src="/Images/beperkingen_Icons/Blauw_algemeen_gezichtsbeperking.png" >
-                                    <div class="label-content">
-                                        
-                                            <h2>Visueel 4</h2>
-                                            <p>Bekijk hier alle informatie over visueel 1</p>
-                                        </a>
-                                    </div>
-                                    <i id="menu-icon" class="fa fa-bookmark" onclick="changeIcon(this)"></i>
-            
-                                </div>
+                                 
                                     </form>
-                              
-                          
-                              
-<!-- uitklapbaar menu over Aantal spelers -->
-                    
-                    
                     </div>
                     
                     </div>
@@ -164,6 +125,7 @@
                 </div>
             </div>
         </div>
+        <script src="js/favourite.js"></script>
         <script>
             var coll = document.getElementsByClassName("collapsible");
             var i;
@@ -180,14 +142,6 @@
               });
             }
             </script>
-            <script>
-              // normal function 
-              let changeIcon = function(icon) {
-                  icon.classList.toggle('fa-bookmark-o')
-              }
-              // arrow function 
-             // changeIcon = (icon) => icon.classList.toggle("fa-times");
-          </script>
     </body>
    
 </html>

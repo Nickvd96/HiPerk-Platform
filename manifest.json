@@ -1,0 +1,25 @@
+{
+    
+    "name": "HiPerks Platform",
+    "short_name": "HiPerks Platform",
+    "start_url": "https://i356100.hera.fhict.nl/index.html",
+    "background_color": "#FFFFFF",
+    "theme_color": "#009578",
+    "display": "standalone",
+    "icons":
+    [
+        {
+            "src": "/Images/HiPerksLogo.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/Images/HiPerksLogo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+
+
+}

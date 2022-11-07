@@ -165,10 +165,8 @@
     margin-top: 8vh;
 }
 .label-description1 {
-    padding: 1vh;
     font-size: 14px;
-    background-color: #E7E7E7;
-    padding-top: 2vh;
+    background-color: white;
 }
 
 .material-icons md-6{
@@ -331,7 +329,6 @@ h2{
     width: 75%;
     text-align: left;
 }
-
 
   @media only screen and (max-width: 600px){
     .textarea{
